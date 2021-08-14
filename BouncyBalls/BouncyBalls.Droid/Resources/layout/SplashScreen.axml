@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/splashTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Mobile Fire"
+        android:textStyle="bold"
+        android:textColor="#ebe700"
+        android:textColorHighlight="#ebe700"
+        android:textIsSelectable="false"
+        android:textSize="20dp" />
+</LinearLayout>

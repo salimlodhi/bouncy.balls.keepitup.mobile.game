@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{B1568941-137D-4B74-BA63-58981AEE3D50}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FootballJuggler.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>FootballJuggler.iOS</AssemblyName>
+    <ProvisioningType>manual</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;IPHONE;IOS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;DEBUG:IPHONE;IOS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\Fonts\MarkerFelt-22.xnb" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Fonts\MarkerFelt-32.xnb" />
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Content\Images\Hd\ball.png" />
+    <BundleResource Include="Content\Images\Hd\ball2.png" />
+    <BundleResource Include="Content\Images\Hd\ballscorebg.png" />
+    <BundleResource Include="Content\Images\Hd\button2ball.png" />
+    <BundleResource Include="Content\Images\Hd\button3ball.png" />
+    <BundleResource Include="Content\Images\Hd\button4ball.png" />
+    <BundleResource Include="Content\Images\Hd\button5ball.png" />
+    <BundleResource Include="Content\Images\Hd\car.png" />
+    <BundleResource Include="Content\Images\Hd\close.png" />
+    <BundleResource Include="Content\Images\Hd\coinscorebg.png" />
+    <BundleResource Include="Content\Images\Hd\dot.png" />
+    <BundleResource Include="Content\Images\Hd\dot2.png" />
+    <BundleResource Include="Content\Images\Hd\gameoverbg.png" />
+    <BundleResource Include="Content\Images\Hd\help.png" />
+    <BundleResource Include="Content\Images\Hd\home.png" />
+    <BundleResource Include="Content\Images\Hd\Kid2.png" />
+    <BundleResource Include="Content\Images\Hd\Kid3.png" />
+    <BundleResource Include="Content\Images\Hd\Kid4.png" />
+    <BundleResource Include="Content\Images\Hd\kid5.png" />
+    <BundleResource Include="Content\Images\Hd\level2bg.png" />
+    <BundleResource Include="Content\Images\Hd\level3bg.png" />
+    <BundleResource Include="Content\Images\Hd\level4bg.png" />
+    <BundleResource Include="Content\Images\Hd\level5bg.png" />
+    <BundleResource Include="Content\Images\Hd\replay.png" />
+    <BundleResource Include="Content\Images\Hd\titlebg.png" />
+    <BundleResource Include="Content\Images\Ld\ball.png" />
+    <BundleResource Include="Content\Images\Ld\ballscorebg.png" />
+    <BundleResource Include="Content\Images\Ld\button2ball.png" />
+    <BundleResource Include="Content\Images\Ld\button3ball.png" />
+    <BundleResource Include="Content\Images\Ld\button4ball.png" />
+    <BundleResource Include="Content\Images\Ld\button5ball.png" />
+    <BundleResource Include="Content\Images\Ld\car.png" />
+    <BundleResource Include="Content\Images\Ld\close.png" />
+    <BundleResource Include="Content\Images\Ld\coinscorebg.png" />
+    <BundleResource Include="Content\Images\Ld\dot.png" />
+    <BundleResource Include="Content\Images\Ld\dot2.png" />
+    <BundleResource Include="Content\Images\Ld\gameoverbg.png" />
+    <BundleResource Include="Content\Images\Ld\help.png" />
+    <BundleResource Include="Content\Images\Ld\home.png" />
+    <BundleResource Include="Content\Images\Ld\Kid2.png" />
+    <BundleResource Include="Content\Images\Ld\Kid3.png" />
+    <BundleResource Include="Content\Images\Ld\Kid4.png" />
+    <BundleResource Include="Content\Images\Ld\kid5.png" />
+    <BundleResource Include="Content\Images\Ld\level2bg.png" />
+    <BundleResource Include="Content\Images\Ld\level3bg.png" />
+    <BundleResource Include="Content\Images\Ld\level4bg.png" />
+    <BundleResource Include="Content\Images\Ld\level5bg.png" />
+    <BundleResource Include="Content\Images\Ld\replay.png" />
+    <BundleResource Include="Content\Images\Ld\titlebg.png" />
+    <Content Include="Content\Sounds\soccer.wav" />
+    <Content Include="Content\Sounds\tap.wav" />
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Images\Hd\animations\" />
+    <Folder Include="Content\Images\Ld\animations\" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="box2d, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\box2d.dll</HintPath>
+    </Reference>
+    <Reference Include="CocosSharp, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\CocosSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
